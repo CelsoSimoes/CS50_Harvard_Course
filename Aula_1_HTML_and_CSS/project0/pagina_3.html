@@ -3,6 +3,27 @@
   <head>
     <title>Playstation</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+
+      body {
+        background-color: #f0ece1;
+      }
+
+      .grid {
+        background-color: lightblue;
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .grid-item {
+        padding: 20px;
+        flex: 33%;
+        text-align: center;
+        border:4px solid blue;
+      }
+
+    </style>
+
   </head>
   <body>
     <nav class="navbar navbar-dark bg-dark"> <!-- Defino a cor da minha Barra de navegacao -->
@@ -26,9 +47,38 @@
     </nav>
 
     <div class="cabecalho">
-      <img src="playstation_logo_4.png" height= "500px" width = "100%" border= 1px solid black>
+      <img src="playstation_img_fluid.jpg" class="img-fluid">
+    </div>
+    <div class="container">
+      <h2>Especificacoes do Hardware:</h2>
+      <ul>
+        <li>2.8 kg</li>
+        <li>AMD Jaguar Octa-Core 1.6 GHz</li>
+        <li>AMD Radeon 18 Computer Units, 800 MHz 1.84 TFLOPS</li>
+        <li>500 GB</li>
+        <li>8 GB DDR5</li>
+        <li>Blu ray/ DVD</li>
+      </ul>
+    </div>
 
+    <div class="introducao_play">
+      <h4>Lançado em novembro de 2013 pela Sony Interactive Enterteimant, o console e a quarta edicao da serie Playstation, sucedendo o Playstation 3</h4>
+      <p>Tendo uma base solida de fas e empresas de jogos parceiras ao longo dos anos, o console conquistou um numero enorme de jogos em seu acervo ao longo do caminho. Dentre esses, seus famosos "Exclusivos" que sao um prato cheio em qualidade, para qualquer gamer que se preze</p>
+    </div>
+
+    <div class="container">
+      <h2>Alguns de seus jogos:</h2>
+      <div class="grid">
+        <div class="grid-item"><img src="jogos_play/god_of_war.jpg" height="300px"></div>
+        <div class="grid-item"><img src="jogos_play/homem_aranha.jpg" height="300px"></div>
+        <div class="grid-item"><img src="jogos_play/uncharted_4.jpg" height="300px"></div>
+        <div class="grid-item"><img src="jogos_play/horizon_zero_dawn.jpg" height="300px"></div>
+        <div class="grid-item"><img src="jogos_play/shadow_of_the_colossus_2.jpg" height="300px"></div>
+        <div class="grid-item"><img src="jogos_play/assassins_creed_origins.jpg" height="300px"></div>
+
+      </div>
 
     </div>
+
   </body>
 </html>
