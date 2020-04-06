@@ -9,6 +9,17 @@
             background-color: #f0ece1;
           }
 
+          @media (min-width: 500px){
+            .lead{
+            }
+          }
+
+          @media (max-width: 499px){
+            .lead{
+              display: none;
+            }
+          }
+
           #descricao {
             display: flex;
             flex-wrap: wrap;
@@ -54,9 +65,12 @@
             font-weight: bold;
           }
 
+          #xbox1, #nint1, #play1 {
+            text-align: center;
+          }
+
           #xbox1 {
             background-color: lightgreen;
-            text-align: center;
           }
 
           #nint1 {
@@ -79,20 +93,17 @@
         <h1>Especificações da Página:</h1>
         <ol>
           O website precisa ter
-          <li>Ao menos 4 Pags HTML, sendo possível ir de uma página para outra, de qualquer uma delas</li>
-          <li>Ao menos 1 de cada item: Lista, Tabela e Imagem</li>
-          <li>Ao menos um arquivo com stylesheet</li>
-          <li>Nos stylesheets, é preciso ter ao menos 5 propriedades CSS(trivial), 5 seletores, e ao menos 1 id e 1 classe.</li>
-          <li>O stylesheets precisa ser responsivo para Clulares e ter uma query responsiva tambem</li>
-          <li>Preciso usar Bootstrap 4, ao menos um componente e 2 colunas usando o grid model</li>
-          <li>Ao menos uma variavel SCSS, com heranca e aninhamento</li>
-          <li>O README precisa ser completo, contendo todas as informações de cada arquivo, e gerais.</li>
+          <li>Ao menos 4 Pags HTML, sendo possível ir de uma página para outra, de qualquer uma delas</li> FEITO
+          <li>Ao menos 1 de cada item: Lista, Tabela e Imagem</li> FALTA INCLUIR A 'LISTA' UMA EM CADA PAGINA
+          <li>Ao menos um arquivo com stylesheet</li>STYLESHEETS FEITAS BASTANDO SEPARAR O ARQUIVO COM OS STYLES
+          <li>Nos stylesheets, é preciso ter ao menos 5 propriedades CSS(trivial) 'oq caracteriza msm',
+           5 seletores 'oq define as partes tipo div{}, h1{}',
+            e ao menos 1 id e 1 classe 'triviais'.</li> FALTA MAIS 2 SELECTORS, POSSO INCLUIR NAS PAGINAS
+          <li>O stylesheets precisa ser responsivo para Clulares e ter uma query responsiva tambem</li> FALTA a query, posso usar NA NAVBAR POR EXEMPLO
+          <li>Preciso usar Bootstrap 4, ao menos um componente e 2 colunas usando o grid model</li> COMPONENTES FEITOS, FALTA O GRID, QUE É TIPO UMA TABELA
+          <li>Ao menos uma variavel SCSS, com heranca e aninhamento</li> A FAZER
+          <li>O README precisa ser completo, contendo todas as informações de cada arquivo, e gerais.</li> A FAZER
         </ol>
-
-        <h1>Possiveis temas: </h1>
-        <h2>Consoles da geração atual ou as Grandes marcas de Consoles - Vai ser esse</h2>
-        <h2>Pandemias das ultimas decadas</h2>
-        <h2>Possibilidades da implementacao da inteligencia artificial no nosso dia-a-dia</h2>
 -->
       <nav class="navbar navbar-dark bg-dark"> <!-- Defino a cor da minha Barra de navegacao -->
           <ul class="nav nav-pills">
