@@ -9,6 +9,21 @@
         background-color: #f0ece1;
       }
 
+      .intro {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 25px;
+        background-color: lightblue;
+        padding: 20px;
+        width: 100%;
+      }
+
+      .container_play{
+        padding: 30px;
+        border: 3px;
+        text-align: center;
+      }
+
       .grid {
         background-color: lightblue;
         display: flex;
@@ -20,6 +35,16 @@
         flex: 33%;
         text-align: center;
         border:4px solid blue;
+      }
+
+      .preco_play{
+        font-weight: bold;
+      }
+
+      .col-lg-4{
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+        text-align: center;
       }
 
     </style>
@@ -47,24 +72,37 @@
     </nav>
 
     <div class="cabecalho">
-      <img src="playstation_img_fluid.jpg" class="img-fluid">
+      <img src="playstation_img_fluid.jpg" width="100%" height="500px">
     </div>
-    <div class="container">
-      <h2>Especificacoes do Hardware:</h2>
-      <ul>
-        <li>2.8 kg</li>
-        <li>AMD Jaguar Octa-Core 1.6 GHz</li>
-        <li>AMD Radeon 18 Computer Units, 800 MHz 1.84 TFLOPS</li>
-        <li>500 GB</li>
-        <li>8 GB DDR5</li>
-        <li>Blu ray/ DVD</li>
-      </ul>
+    <div class="intro">
+      <div class="introducao_play">
+        <h4>Lançado em novembro de 2013 pela Sony Interactive Enterteimant, o console e a quarta edicao da serie Playstation, sucedendo o Playstation 3</h4>
+        <p>Tendo uma base solida de fas e empresas de jogos parceiras ao longo dos anos, o console conquistou um numero enorme de jogos em seu acervo ao longo do caminho. Dentre esses, seus famosos "Exclusivos" que sao um prato cheio em qualidade, para qualquer gamer que se preze</p>
+      </div>
     </div>
 
-    <div class="introducao_play">
-      <h4>Lançado em novembro de 2013 pela Sony Interactive Enterteimant, o console e a quarta edicao da serie Playstation, sucedendo o Playstation 3</h4>
-      <p>Tendo uma base solida de fas e empresas de jogos parceiras ao longo dos anos, o console conquistou um numero enorme de jogos em seu acervo ao longo do caminho. Dentre esses, seus famosos "Exclusivos" que sao um prato cheio em qualidade, para qualquer gamer que se preze</p>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="container_play">
+          <h2>Especificacoes do Hardware:</h2>
+          <ul>
+            <li>2.8 kg</li>
+            <li>AMD Jaguar Octa-Core 1.6 GHz</li>
+            <li>AMD Radeon 18 Computer Units, 800 MHz 1.84 TFLOPS</li>
+            <li>500 GB</li>
+            <li>8 GB DDR5</li>
+            <li>Blu ray/ DVD</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="container_play">
+          <h2>Media de preco:</h2>
+          <p class="preco_play"><h1>US$ 300,00</h1></p>
+        </div>
+      </div>
     </div>
+
 
     <div class="container">
       <h2>Alguns de seus jogos:</h2>
@@ -77,8 +115,29 @@
         <div class="grid-item"><img src="jogos_play/assassins_creed_origins.jpg" height="300px"></div>
 
       </div>
-
     </div>
+
+    <div class="row">
+          <div class="col-lg-4">
+            <img class="rounded-circle" src="Pessoas/cd.png" alt="Generic placeholder image" width="140" height="140">
+            <h2>Heading</h2>
+            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+            <h2>Heading</h2>
+            <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+            <h2>Heading</h2>
+            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+          </div><!-- /.col-lg-4 -->
+        </div><!-- /.row -->
+
 
   </body>
 </html>
