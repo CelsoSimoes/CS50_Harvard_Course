@@ -3,6 +3,46 @@
   <head>
     <title>Xbox</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+      body {
+        background-color: #f0ece1;
+      }
+
+      .intro {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 25px;
+        background-color: lightgreen;
+        padding: 20px;
+        width: 100%;
+      }
+
+      .grid {
+        background-color: lightgreen;
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .grid-item {
+        padding: 20px;
+        flex: 33%;
+        text-align: center;
+        border:4px solid green;
+      }
+
+      .col-lg-4 {
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+        text-align: center;
+      }
+
+      .container_celso{
+        padding: 30px;
+        border: 3px;
+        text-align: center;
+      }
+
+    </style>
   </head>
   <body>
     <nav class="navbar navbar-dark bg-dark"> <!-- Defino a cor da minha Barra de navegacao -->
@@ -29,20 +69,94 @@
       <img src="xbox_img_fluid_2.jpg" class="img-fluid">
     </div>
 
-    introducao mais detalhada do consoles
-    especificacoes basicas do consoles (lista)
-    <h2>Especificacoes do Hardware:</h2>
-    <ul>
-      <li>3.5 kg</li>
-      <li>AMD Jaguar Octa-Core 1.75 GHz</li>
-      <li>AMD Radeon GCN 768 cores 853 MHz 1,31 TFLOPS</li>
-      <li>500 GB</li>
-      <li>8 GB DDR3</li>
-      <li>Blu ray/ DVD</li>
-    </ul>
-    media de preco de um console atualmente "baseado numa pesquisa recente e bla bla bla"
-    Alguns dos melhores jogos para o console segundo o metacritic
-    Exclusivos
-    Botao de voltar ao topo, veja nossas outras paginas
+    <div class="intro">
+      <div class="introducao_xbox">
+        <h4>Lançado em novembro de 2013 pela Microsoft, o console e a terceira edicao da serie Xbox, sucedendo o Xbox 360</h4>
+        <p>Apesar de possuir uma estreia nao muito animadora, o console foi ganhando mais espaco ao decorrer dos anos coquistando cada vez mais fas e inovando em seus servicos de assinarutas, no qual o "Gamepass" é oque mais se destaca entre todos seus servicos sendo uma inovacao na area</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6">
+        <div class="container_celso">
+          <h2>Especificacoes do Hardware:</h2>
+          <ul>
+            <li>3.5 kg</li>
+            <li>AMD Jaguar Octa-Core 1.75 GHz</li>
+            <li>AMD Radeon GCN 768 cores 853 MHz 1,31 TFLOPS</li>
+            <li>500 GB</li>
+            <li>8 GB DDR3</li>
+            <li>Blu ray/ DVD</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="container_celso">
+          <h2>Media de preco:</h2>
+          <p class="preco_play"><h1>US$ 272,70<a><h4> ou </h4></a>R$ 1424,00</h1></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <h2>Alguns de seus jogos:</h2>
+      <div class="grid">
+        <div class="grid-item"><img src="jogos_xbox/gears_5_2.jpg" height="300px"></div>
+        <div class="grid-item"><img src="jogos_xbox/Halo_5.jpg" height="300px"></div>
+        <div class="grid-item"><img src="jogos_xbox/ori_and_the_blind_forest.jpg" height="300px"></div>
+        <div class="grid-item"><img src="jogos_xbox/ori_and_the_will_of_the_wisps.jpg" height="300px"></div>
+        <div class="grid-item"><img src="jogos_xbox/the_witcher_3_wild_hunt.jpg" height="300px"></div>
+        <div class="grid-item"><img src="jogos_xbox/dragon_ball_z_kakarot.jpg" height="300px"></div>
+
+      </div>
+    </div>
+    <hr class="featurette-divider">
+    <h2>Reviews</h2>
+
+    <div class="row">
+      <div class="col-lg-4">
+        <img class="rounded-circle" src="Pessoas/gamer_7.jpg" width="140" height="140">
+        <h2>BlueGuy547</h2>
+        <p>Além do preço ser um pouco mais acessivel comparado a outros consoles, os serviços que a Microsoft oferece sao excelentes. Seu atendimento ao cliente e o melhor que conheco! </p>
+
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <img class="rounded-circle" src="Pessoas/gamer_8.jpg" width="140" height="140">
+        <h2>Beethoven588</h2>
+        <p>A qualidade aplicada aos exclusivos da plataforma são implacaveis. Ori e uma obra prima no quesito som, graficos e historia!</p>
+
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+          <img class="rounded-circle" src="Pessoas/gamer_9.jpg" width="140" height="140">
+        <h2>MrFrenchFrie2</h2>
+        <p>O GAMEPASS É O MELHOR SERVICO DE ASSINATURA DO MUNDO!!! Não sei quanto tempo tem que não compro mais jogos; todos os que quero estao no Gamepass!</p>
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+
+    <div class="row">
+      <div class="col-lg-4">
+      </div>
+      <div class="col-lg-4">
+        <p><a class="btn btn-secondary" href="index.html">&laquo; Pagina Inicial &raquo;</a></p>
+      </div>
+      <div class="col-lg-4">
+        <p><a class="btn btn-secondary" href="pagina_2.html" role="button">Proxima Pagina &raquo;</a></p>
+      </div>
+
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row">
+      <div class="col-md-9">
+        <h6>Disclaimer 2020</h6>
+        <p><h6 class="text-muted">Todos os direitos de imagens utilizadas na criacao  deste Website pertencem a seus respectivos donos, e eu não possuo nenhuma delas</h6></p>
+      </div>
+      <div class="col-md-3">
+        <h6>Projeto 0</h6>
+        <p><h6 class="text-muted">CS50’s Web Programming with Python and JavaScript</h6></p>
+      </div>
+
+    </div>
   </body>
 </html>

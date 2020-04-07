@@ -3,6 +3,51 @@
   <head>
     <title>Nintendo</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+
+      body {
+        background-color: #f0ece1;
+      }
+
+      .intro {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 25px;
+        background-color: #ff8280;
+        padding: 20px;
+        width: 100%;
+      }
+
+      row {
+        text-align: center;
+      }
+
+      .grid {
+        background-color: #ff8280;
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .grid-item {
+        padding: 20px;
+        flex: 33%;
+        text-align: center;
+        border:4px solid red;
+      }
+
+      .col-lg-4 {
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+        text-align: center;
+      }
+
+      .container_celso{
+        padding: 30px;
+        border: 3px;
+        text-align: center;
+      }
+
+    </style>
   </head>
   <body>
     <nav class="navbar navbar-dark bg-dark"> <!-- Defino a cor da minha Barra de navegacao -->
@@ -26,16 +71,99 @@
     </nav>
 
     <div class="cabecalho">
-      <img src="nintendo_img_fluid.jpg" class="img-fluid">
+      <img src="nintendo_background_2.png" class="img-fluid">
     </div>
-    <h2>Especificacoes do Hardware:</h2>
-    <ul>
-      <li>389 g</li>
-      <li>SoC NVIDIA Tegra</li>
-      <li>GeForce ULP</li>
-      <li>32 GB</li>
-      <li>4 GB</li>
-      <li>Cartucho<</li>
-    </ul>
+
+    <div class="intro">
+      <div class="introducao_nintendo">
+        <h4>Lançado em marco de 2017 pela Nintendo, o console veio com a promessa de ser um novo conceito para uma "Plataforma de Jogos"</h4>
+        <p>Sendo um Hibridro, o Nintendo Switch veio para coexistir com o 3DS e nao sucede-lo. Com uma vassta quantia de empresas associadas, o console veio ganhando cada vez mais usuarios, e nos ultimos meses bateu recordes de vendas; vendas essas que superam ate mesmo os numeros de seus concorrentes.</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="container_celso">
+          <h2>Especificacoes do Hardware:</h2>
+          <ul>
+            <li>389 g</li>
+            <li>SoC NVIDIA Tegra</li>
+            <li>GeForce ULP</li>
+            <li>32 GB</li>
+            <li>4 GB</li>
+            <li>Cartucho<</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="container_celso">
+          <h2>Media de preco:</h2>
+          <p><h1>US$ 555,36<a><h4> ou </h4></a>R$ 2900,00</h1></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <h2>Alguns de seus jogos:</h2>
+      <div class="grid">
+        <div class="grid-item"><img src="jogos_nintendo/the_legend_of_zelda_breath_of_the_wild.jpg" height="300px"></div>
+        <div class="grid-item"><img src="jogos_nintendo/super_smash_bros_ultimate_2.jpg" height="300px"></div>
+        <div class="grid-item"><img src="jogos_nintendo/super_mario_odyssey_2.jpg" height="300px"></div>
+        <div class="grid-item"><img src="jogos_nintendo/splatoon_2.jpg" height="300px"></div>
+        <div class="grid-item"><img src="jogos_nintendo/spyro.jpg" height="300px"></div>
+        <div class="grid-item"><img src="jogos_nintendo/mortal_kombat_11.jpg" height="300px"></div>
+
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+    <h2>Reviews</h2>
+
+    <div class="row">
+      <div class="col-lg-4">
+        <img class="rounded-circle" src="Pessoas/gamer_6.jpg" width="140" height="140">
+        <h2>MindGard8</h2>
+        <p>Eles conseguiram colocar Mario, Skyrim e milhares de outros jogos na sua mao, com o mesmo desempenho de Consoles robustos e estaticos. A Nintendo e demais!</p>
+
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <img class="rounded-circle" src="Pessoas/gamer_4.jpg" width="140" height="140">
+        <h2>Bread1996</h2>
+        <p>Zelda sempre foi meu jogo favorito e eu não poderia estar mais feliz de obter o Nintendo Switch depois de Jogar Breath of The Wild. É incrivel!!!</p>
+
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+          <img class="rounded-circle" src="Pessoas/gamer_5.jpg" width="140" height="140">
+        <h2>xPatolinx</h2>
+        <p>Eu consigo jogar a qualquer hora em qualquer lugar sem precisar me preocupar com televisoes ou locomocao do meu console, e isso é o mais importante pra mim: Comodidade!</p>
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+
+    <div class="row">
+      <div class="col-lg-4">
+        <p><a class="btn btn-secondary" href="pagina_1.html">&laquo; Pagina Anterior</a></p>
+      </div>
+      <div class="col-lg-4">
+        <p><a class="btn btn-secondary" href="index.html">&laquo; Pagina Inicial &raquo;</a></p>
+      </div>
+      <div class="col-lg-4">
+        <p><a class="btn btn-secondary" href="pagina_3.html" role="button">Proxima Pagina &raquo;</a></p>
+      </div>
+
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row">
+      <div class="col-md-9">
+        <h6>Disclaimer 2020</h6>
+        <p><h6 class="text-muted">Todos os direitos de imagens utilizadas na criacao  deste Website pertencem a seus respectivos donos, e eu não possuo nenhuma delas</h6></p>
+      </div>
+      <div class="col-md-3">
+        <h6>Projeto 0</h6>
+        <p><h6 class="text-muted">CS50’s Web Programming with Python and JavaScript</h6></p>
+      </div>
+
+    </div>
   </body>
 </html>
