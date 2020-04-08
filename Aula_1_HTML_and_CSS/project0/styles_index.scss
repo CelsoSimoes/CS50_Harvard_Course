@@ -1,0 +1,78 @@
+%xbox_background {
+  background-color: lightgreen;
+}
+
+%nintendo_background {
+  background-color: #ff8280;
+}
+
+%playstation_background {
+  background-color: lightblue;
+}
+
+%intro {
+  font-size: 25px;
+  padding: 20px;
+  width: 100%;
+}
+
+%grid_item {
+  padding: 20px;
+  flex: 33%;
+  text-align: center;
+  img {
+    height: 300px;
+  }
+}
+
+body {
+  background-color: #f0ece1;
+}
+
+.intro_xbox {
+  @extend %intro;
+  background-color: lightgreen;
+}
+
+.intro_nintendo {
+  @extend %intro, %nintendo_background;
+  p {
+    font-size: 20px;
+  }
+}
+
+.intro_playstation {
+  @extend %intro, %playstation_background;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.grid_xbox {
+  @extend %grid_item, %xbox_background;
+  border:4px solid green;
+}
+
+.grid_nintendo {
+  @extend %grid_item, %nintendo_background;
+  border:4px solid red;
+}
+
+.grid_playstation {
+  @extend %grid_item, %playstation_background;
+  border:4px solid blue;
+}
+
+.container_celso{
+  padding: 30px;
+  border: 3px;
+  text-align: center;
+}
+
+.col-lg-4{
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
