@@ -1,90 +1,10 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Escolha seu Console</title> <!-- Choose your Console!!! -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <style>
-
-          body {
-            background-color: #f0ece1;
-          }
-
-          @media (min-width: 500px){
-            .lead{
-            }
-          }
-
-          @media (max-width: 499px){
-            .lead{
-              display: none;
-            }
-          }
-
-          #descricao {
-            display: flex;
-            flex-wrap: wrap;
-            font-size: 25px;
-            padding: 20px;
-            width: 100%;
-          }
-
-          .featurette-divider {
-            margin: 20px;
-          }
-
-          .alinhado_vertical {
-            line-height:50px;
-            margin: 10px;
-          }
-
-          #resto_corpo {
-            margin: 20px;
-          }
-
-          .col-lg-4 {
-            text-align: center;
-          }
-
-          table {
-            border: 1px solid black;
-            border-collapse: collapse;
-            text-align: center;
-            margin: auto;
-
-          }
-
-          th, td {
-            border: 1px solid black;
-            padding: 5px;
-            text-align: center;
-          }
-
-          th, #lateral_esquerda {
-            background-color: lightgray;
-            font-weight: bold;
-          }
-
-          #xbox1, #nint1, #play1 {
-            text-align: center;
-          }
-
-          #xbox1 {
-            background-color: lightgreen;
-          }
-
-          #nint1 {
-            background-color: #ff8280;
-          }
-
-          #play1 {
-            background-color: lightblue;
-          }
-
-          .btn btn-secondary {
-            background-color: black !important;
-          }
-
-        </style>
+      <title>Escolha seu Console</title> <!-- Choose your Console!!! -->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+      <link rel="stylesheet" href="styles.css">
 
     </head>
     <body>
@@ -100,7 +20,7 @@
             e ao menos 1 id e 1 classe 'triviais'.</li> FALTA MAIS 2 SELECTORS, POSSO INCLUIR NAS PAGINAS
           <li>O stylesheets precisa ser responsivo para Clulares e ter uma query responsiva tambem</li> FALTA a query, posso usar NA NAVBAR POR EXEMPLO
           <li>Preciso usar Bootstrap 4, ao menos um componente e 2 colunas usando o grid model</li> FEITO
-          <li>Ao menos uma variavel SCSS, com heranca e aninhamento</li> A FAZER
+          <li>Ao menos uma variavel SCSS, com heranca e aninhamento</li> Feito
           <li>O README precisa ser completo, contendo todas as informações de cada arquivo, e gerais.</li> A FAZER
         </ol>
 -->
@@ -118,9 +38,6 @@
             <li class="nav-item">
               <a class="nav-link" href="pagina_3.html">Playstation</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="Pagina_4.html">Extra</a>
-            </li>
           </ul>
       </nav>
 
@@ -132,9 +49,9 @@
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img class="d-block w-100" src="xbox_logo_3.jpg" title= "Xbox" height="500">
+            <img id="img_x" class="d-block w-100" src="xbox_logo_3.jpg" title= "Xbox">
             <div class="container">
-              <div class="carousel-caption d-none d-md-block">
+              <div class="carousel-caption">
                 <p>
                   <h5>O console da gigannte dona da Windows, conquistou seu lugar entre os gamers na última decada, e cada vez mais, atrai milhares de jogadores com seu programas de assinatura</h5>
                 </p>
@@ -171,9 +88,7 @@
           <span class="sr-only">Next</span>
         </a>
       </div>
-<!--
-      <hr class="featurette-divider">
--->
+
       <!--Colocoar uma pequena introducao/descricao do que sera apresentado -->
       <div id="descricao">
         <div class="container">
@@ -185,7 +100,9 @@
       </div>
 
       <hr class="featurette-divider">
+
       <div id="resto_corpo">
+
       <!--Colocar (talvez) uma pequena review de cada console, com uma imagem numa lateral e a review em outra-->
       <div class="row align-items-center" id="xbox1">
           <div class="col-md-7">
