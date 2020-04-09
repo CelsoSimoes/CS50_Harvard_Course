@@ -9,27 +9,27 @@ I've made the entiry website in my native language (Portuguese, Brazil), and I h
 About the website:
 It is a website called "Escolha seu Console", that means "Choose your Console" referring to the gaming devices of the big brands.
 And on the website i tried to talk about the producers of each console, their hardware specifications, some of their games, the average price of each console and the opinion of fictional fans; as if it were a website that would guide the choice of one of the 3 consoles for future purchase.
+All pages on the site have a Navbar that provide navigation between these pages.
+I tried to make the whole site responsive, and adapted for mobile using the:
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> presented by professor Brian Yu in class 1- HTML, CSS; and I believe I have obtained a satisfactory result.
 
 About the Files:
-Trodas as paginas do site possuem uma Navbar que proporcionam a navegação entre essas pagians.
-Tentei fazer todo o site responsivo, e adaptado para celular utilizando o :
-<Meta aojsdoasjdo> apresentado pelo professor Jin Yang na aula 1- Html CSS; e creio ter obtido um resultado satisfatório.
-index.html - The home of the website, possuindo uma stylesheet linkada a ela (styles_index); uma navbar, um carousel (componente obtido do Bootstrap 4) personalizado; diversas Rows incluindo imagens botoes com links e textos; uma tabela comparando o hardware basico de cada console, e um disclaimer no final.
-styles_index.css - Arquivo stylesheet utilizado na main page index.html contendo 5 seletores, diversas propriedades, classes e IDs. Alem da @media query utilizada para tonar as imagens do carousel mais responsivas e adaptadas para mobile também.
-pagina_1 - Possui a navbar, uma imagem central, uma row com a unordered list sobre as especificações tecnicas dos console numa coluna e e media de preco na outra, um grid utilizado na apresentacao de 6 jogos do console, tres colunas de reviews de fas ficticios criados por mim (Modelo de linha obtido do bootstrap 4), e por fim, um simples "Disclaimer" junto ao nome do Projeto.
-Pagina destinada a falar especificamente sobre o Console "Xbox one" e suas respectivas propriedades, preços, jogos and reviews. Personalizada e responsiva.
-pagina_2 - Semelhante a pagina_1 porem com foco no Console "Nintendo Switch".
-pagina_3 - Semelhante a pagina_1 porem com foco no Console "Playstation 4".
-styles_pages.scss - Arquivo stylesheet utilizado nas paginas secundárias do site, contendo diversos nestings e heranças, além de muitos CSS properties, 3 seletores e uso de varias classes; para assim criar um bom design personalizado
-styles_pages.map - Arquivo criado automaticamente pelo sass
-styles_pages.css - Arquivo css convertido pelo sass, linkado nas 3 paginas secundarias do site.
+index.html - The home of the website, having a stylesheet linked to it (styles_index); a navbar, a custom carousel (component obtained from Bootstrap 4); several Rows including images, buttons with links and texts; a table comparing the basic hardware of each console, and a disclaimer at the end.
+styles_index.css - Stylesheet file used on the main page index.html containing 5 selectors, different CSS properties, classes and IDs. In addition to, an @media query used to make the carousel images more responsive and adapted for mobile as well.
+pagina_1 - It has a navbar, a central image, a row with the unordered list on the technical specifications of the consoles in one column and the average price in the other, a grid used in the presentation of 6 console games, three columns of fictional reviews created by me (row model obtained from bootstrap 4), and finally, a simple "Disclaimer" next to the Project name.
+In general, a page designed to talk specifically about the "Xbox one" console and its properties, prices, games and reviews. Personalized and responsive.
+pagina_2 - Similar to pagina_1 but focused on the "Nintendo Switch" console.
+pagina_3 - Similar to pagina_1 but focused on the "Playstation 4" console.
+styles_pages.scss - Stylesheet file used on secondary pages of the site, containing several nestings and inheritances, in addition to many CSS properties, 3 selectors and use of various classes; to create a good personalized design.
+styles_pages.map - File created automatically by SASS.
+styles_pages.css - CSS file converted by SASS, linked on the 3 secondary pages of the site.
 
-As pastas contem todos os arquivos de imagens utilizados em seus respectivos indicados pelo nome.
+The folders contain all the image files used in their respective indicated by name.
 
-Eu não contei, mas acredito ter gasto em torno de 40 horas de trabalho com este projeto. Tendo em vista que é o primeiro site de verdade que crio, estou satisfeito com meu desempenho. Fora uma experiencia prazerosa, que me proporcionou uma boa experiencia e crescimento pessoal.
+I didn't count, but I believe I spent around 40 hours working on this project. Since it is the first real site I create, I am satisfied. It was a pleasant task, which provided me with a good experience and personal growth.
 
-Aguardo ansiosamente o retorno sobre a aprovação  do Projeto pelos responsáveis no CS50 e me ponho a disposição para qualquer correção e manutenção necessária. Desde já, agradeço.
-Atenciosamente,
+I am eagerly awaiting the return of considerations on the Project by those responsible and I am available for any necessary corrections and maintenance. Thank you very much in advance.
+Sincerely,
 
 Celso Junio Simões de Oliveira  Santos
 
