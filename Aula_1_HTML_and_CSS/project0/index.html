@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
     <head>
-      <title>Escolha seu Console</title> <!-- Choose your Console!!! -->
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-      <link rel="stylesheet" href="styles_index.css">
+      <title>Escolha seu Console</title> <!-- Choose your Console! -->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--To adapt the view in mobile plataforms-->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> <!--Link to use Bootstrap 4 components-->
+      <link rel="stylesheet" href="Stylesheets/styles_index.css"> <!--File with the index stylesheets-->
 
     </head>
     <body>
@@ -24,33 +24,33 @@
           <li>O README precisa ser completo, contendo todas as informações de cada arquivo, e gerais.</li> A FAZER
         </ol>
 -->
-      <nav class="navbar navbar-dark bg-dark"> <!-- Defino a cor da minha Barra de navegacao -->
-          <ul class="nav nav-pills">
+      <nav class="navbar navbar-dark bg-dark"> <!-- Define the color of my navbar; component obtained from bootstrap 4 -->
+          <ul class="nav nav-pills"> <!--Make a unordered list with pills in the navbar-->
             <li class="nav-item">
-              <a class="nav-link active" href="index.html">Inicio</a>
+              <a class="nav-link active" href="index.html">Inicio</a> <!--Link to the index.html, the homepage, which is where we are currently, with the Active stats-->
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="pagina_1.html">Xbox</a>
+              <a class="nav-link" href="pagina_1.html">Xbox</a> <!--Link to Xbox One page-->
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="pagina_2.html">Nintendo</a>
+              <a class="nav-link" href="pagina_2.html">Nintendo</a> <!--Link to Nintendo Switch page-->
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="pagina_3.html">Playstation</a>
+              <a class="nav-link" href="pagina_3.html">Playstation</a> <!--Link to Playstation 4 page-->
             </li>
           </ul>
       </nav>
 
-      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel"> <!--Component obtained from Bootstrap 4. It's a interactive Carousel with 3 images and descriptions-->
+        <ol class="carousel-indicators"> <!--Slide system-->
           <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
           <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
           <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img id="img_x" class="d-block w-100" src="xbox_logo_3.jpg" title= "Xbox">
-            <div class="container">
+            <img class="d-block w-100" src="Imagens/xbox_logo_3.jpg" title= "Xbox"> <!--Stops when land the cursor, and the width get all the page-->
+            <div class="container"> <!--For descriptions-->
               <div class="carousel-caption">
                 <p>
                   <h5>O console da gigannte dona da Windows, conquistou seu lugar entre os gamers na última decada, e cada vez mais, atrai milhares de jogadores com seu programas de assinatura</h5>
@@ -59,7 +59,7 @@
             </div>
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="playstation_logo_2.png" height="500" alt="Second slide">
+            <img class="d-block w-100" src="Imagens/playstation_logo_2.png" height="500" alt="Second slide">
             <div class="container">
               <div class="carousel-caption">
                 <p>
@@ -69,7 +69,7 @@
             </div>
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="nintendo_logo_4.png" height="500" alt="Third slide">
+            <img class="d-block w-100" src="Imagens/nintendo_logo_4.png" height="500" alt="Third slide">
             <div class="container">
               <div class="carousel-caption">
                 <p>
@@ -89,7 +89,7 @@
         </a>
       </div>
 
-      <!--Colocoar uma pequena introducao/descricao do que sera apresentado -->
+      <!--Brief description of what will be displayed on the page-->
       <div id="descricao">
         <div class="container">
           <h5>São várias as plataformas que Gamers podem utilizar para se entreter. Neste site abordaremos, em especifico, os consoles da atual geracao:</h5>
@@ -99,32 +99,32 @@
         </div>
       </div>
 
-      <hr class="featurette-divider">
+      <hr class="featurette-divider"> <!--Divider obtained from Bootstrap 4-->
 
-      <div id="resto_corpo">
+      <div id="resto_corpo"> <!--Used to place a margin on the rest of the page-->
 
-      <!--Colocar (talvez) uma pequena review de cada console, com uma imagem numa lateral e a review em outra-->
+      <!--Brif description of eache console, with text in one side, and an image in the other-->
       <div class="row align-items-center" id="xbox1">
-          <div class="col-md-7">
-            <h2 class="alinhado_vertical">Xbox One</h2>
+          <div class="col-md-7"> <!--Division made with columns-->
+            <h2 class="alinhado_vertical">Xbox One</h2> <!--Class with text align-->
             <p class="lead">Com uma extensa lista de jogos, um dos servicos que mais atrai jogadores para o console e o seu servico uni chamado "Xbox Game Pass" que libera acesso a uma centena de jogos para seus assinantes.</p>
-            <p><a class="btn btn-secondary" href="pagina_1.html" role="button">Saiba mais!</a></p>
+            <p><a class="btn btn-secondary" href="pagina_1.html" role="button">Saiba mais!</a></p> <!--Button that links for the console page-->
           </div>
           <div class="col-md-5">
-            <img class="featurette-image img-fluid mx-auto" src="console_1.jpg" heigth= 500px>
+            <img class="featurette-image img-fluid mx-auto" src="Imagens/console_1.jpg" heigth= 500px> <!--Image from the console-->
           </div>
         </div>
 
         <hr class="featurette-divider">
 
-        <div class="row align-items-center" id="nint1">
-          <div class="col-md-7 order-md-2">
+        <div class="row align-items-center" id="nint1"> <!--id that will be used to style the console line-->
+          <div class="col-md-7 order-md-2"> <!--Order is necessary to alternate the text and img sides-->
             <h2 class="alinhado_vertical">Nintendo Switch</h2>
             <p class="lead">Com o jogo "Zelda: The Breath of the Wild" como carro chefe exclusivo da plataforma, o console possui a particularidade de ser portátil em contraste com os outros listados no site. E mesmo assim, seu hardware consegue se aproximar dos consoles fixos</p>
             <p><a class="btn btn-secondary" href="pagina_2.html" role="button">Saiba mais!</a></p>
           </div>
           <div class="col-md-5 order-md-1">
-            <img class="featurette-image img-fluid mx-auto" src="nintendo_background_2.png" heigth= 400px>
+            <img class="featurette-image img-fluid mx-auto" src="Imagens/nintendo_background_2.png" heigth= 400px>
           </div>
         </div>
 
@@ -137,13 +137,13 @@
             <p><a class="btn btn-secondary" href="pagina_3.html" role="button">Saiba mais!</a></p>
           </div>
           <div class="col-md-5">
-            <img class="featurette-image img-fluid mx-auto" src="playstation_logo_3.png" heigth= 300px>
+            <img class="featurette-image img-fluid mx-auto" src="Imagens/playstation_logo_3.png" heigth= 300px>
           </div>
         </div>
 
         <hr class="featurette-divider">
 
-      <!--Fazer uma tabela comparativa com as comparacoes tecnicas(Hardware) de cada console apresentado -->
+      <!--Comparative table with the Hardware of the three Consoles -->
       <div class="container">
         <h2>E o poder da cada Maquina?</h2>
         <p><h5>Elaboramos uma tabela com as especificacoes de Hardware de cada Console para que voce possa saber mais detalhadamente o poder da maquina que estais a escolher</h5></p>
@@ -157,7 +157,7 @@
           <th>Playstation</th>
         </tr>
         <tr>
-          <td id="lateral_esquerda">Peso</td>
+          <td id="lateral_esquerda">Peso</td> <!--Id used to style the colum-->
           <td>3.5 kg</td>
           <td>389 g</td>
           <td>2.8 kg</td>
@@ -194,7 +194,7 @@
         </tr>
       </table>
 
-      <!--Colocar um Disclaimer simples no final de cada pagina do Website-->
+      <!--Symbolic website Disclaimer -->
 
     <hr class="featurette-divider">
 
@@ -210,9 +210,10 @@
 
     </div>
 
-      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <!--Additional Scripts to Bootstrap 4 component: Carousel-->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
       </div>
     </body>
 </html>
