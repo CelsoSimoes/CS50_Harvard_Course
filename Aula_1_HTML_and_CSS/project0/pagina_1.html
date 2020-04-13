@@ -2,13 +2,13 @@
 <html>
   <head>
     <title>Xbox</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles_pages.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--To adapt the view in mobile plataforms-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> <!--Link to use Bootstrap 4 components-->
+    <link rel="stylesheet" href="Stylesheets/styles_pages.css"> <!--File with the pages stylesheets-->
 
   </head>
   <body>
-    <nav class="navbar navbar-dark bg-dark"> <!-- Defino a cor da minha Barra de navegacao -->
+    <nav class="navbar navbar-dark bg-dark"> <!-- Same navbar from the index.html, but now with the Xbox page item active -->
       <ul class="nav nav-pills">
         <li class="nav-item">
           <a class="nav-link" href="index.html">Inicio</a>
@@ -26,7 +26,7 @@
     </nav>
 
     <div class="cabecalho">
-      <img src="xbox_img_fluid_2.jpg" class="img-fluid">
+      <img src="Imagens/xbox_img_fluid_2.jpg" class="img-fluid">
     </div>
 
     <div class="intro_xbox">
@@ -35,7 +35,7 @@
     </div>
 
     <div class="row">
-      <div class="col-md-6">
+      <div class="col-md-6"> <!--Column with the Hardware specifications int an unorderd list inside my custom container-->
         <div class="container_celso">
           <h2>Especificacoes do Hardware:</h2>
           <ul>
@@ -49,7 +49,7 @@
         </div>
       </div>
       <div class="col-md-6">
-        <div class="container_celso">
+        <div class="container_celso"> <!--Container with the average price-->
           <h2>Media de preco:</h2>
           <p class="preco_play"><h1>US$ 272,70<a><h4> ou </h4></a>R$ 1424,00</h1></p>
         </div>
@@ -57,7 +57,7 @@
     </div>
 
     <div class="container">
-      <h2>Alguns de seus jogos:</h2>
+      <h2>Alguns de seus jogos:</h2> <!--Grid with some games of the Console-->
       <div class="grid">
         <div class="grid_xbox"><img src="jogos_xbox/gears_5_2.jpg"></div>
         <div class="grid_xbox"><img src="jogos_xbox/Halo_5.jpg"></div>
@@ -71,6 +71,7 @@
     <hr class="featurette-divider">
     <h2>Reviews</h2>
 
+    <!--Component from Bootstrap 4, personalized with some fictional user comments-->
     <div class="row">
       <div class="col-lg-4">
         <img class="rounded-circle" src="Pessoas/gamer_7.jpg" width="140" height="140">
@@ -92,19 +93,20 @@
     </div><!-- /.row -->
 
     <div class="row">
-      <div class="col-lg-4">
+      <div class="col-lg-4"> <!--Divided in three columns to make three buttons, but this is the first secondary page, so the firt button it's null-->
       </div>
       <div class="col-lg-4">
-        <p><a class="btn btn-secondary" href="index.html">&laquo; Pagina Inicial &raquo;</a></p>
+        <p><a class="btn btn-secondary" href="index.html">&laquo; Pagina Inicial &raquo;</a></p> <!--Button that links to the homepage-->
       </div>
       <div class="col-lg-4">
-        <p><a class="btn btn-secondary" href="pagina_2.html" role="button">Proxima Pagina &raquo;</a></p>
+        <p><a class="btn btn-secondary" href="pagina_2.html" role="button">Proxima Pagina &raquo;</a></p> <!--Button that links to the next page-->
       </div>
 
     </div>
 
     <hr class="featurette-divider">
 
+    <!--Symbolic website Disclaimer -->
     <div class="row">
       <div class="col-md-9">
         <h6>Disclaimer 2020</h6>
