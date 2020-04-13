@@ -1,0 +1,80 @@
+/* Mobile-responsive @media query. Change the img heigth according to the screen width*/
+@media (min-width:700px){
+  .d-block {
+    height: 475px;
+  }
+  .carousel-caption{ /*NULL */
+
+  }
+}
+
+@media (max-width: 699px){
+  .d-block {
+    height: auto; /*Automatic*/
+  }
+  .carousel-caption{
+    display: none; /*Hides the text*/
+  }
+}
+/*Query to custom the navbar int mobile Devices*/
+@media (max-width: 376px){
+  .nav-item {
+    font-size: 4vw;
+  }
+}
+
+body {
+  background-color: #f0ece1; /*Change the color of the wntire body*/
+}
+
+#descricao { /*Style the initial description of the page*/
+  font-size: 25px;
+  padding: 20px;
+  width: 100%;
+}
+
+.featurette-divider {
+  margin: 20px; /*Specify my margin*/
+}
+
+.alinhado_vertical { /*Making my aligment*/
+  line-height:50px;
+  margin: 10px;
+}
+
+#resto_corpo {
+  margin: 20px;
+}
+
+table { /*Made the table responsive, where columns collapse when the width reduces*/
+  border-collapse: collapse;
+  margin: auto;
+}
+
+th, td { /*Customize my table sections*/
+  border: 1px solid black;
+  padding: 5px;
+  text-align: center;
+}
+
+th, #lateral_esquerda { /*Differentiates table ends*/
+  background-color: lightgray;
+  font-weight: bold;
+}
+
+/*Style the containers of eache console*/
+#xbox1, #nint1, #play1 {
+  text-align: center;
+}
+
+#xbox1 {
+  background-color: lightgreen;
+}
+
+#nint1 {
+  background-color: #ff8280;
+}
+
+#play1 {
+  background-color: lightblue;
+}

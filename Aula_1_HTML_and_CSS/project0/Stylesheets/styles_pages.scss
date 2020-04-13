@@ -1,3 +1,4 @@
+/*Variables that will be used in the grid of games*/
 %xbox_background {
   background-color: lightgreen;
 }
@@ -16,12 +17,19 @@
   width: 100%;
 }
 
-%grid_item {
+%grid_item { /*Making the items resposive and custom*/
   padding: 20px;
   flex: 33%;
   text-align: center;
-  img {
+  img { /*Using nesting*/
     height: 300px;
+  }
+}
+
+/*Query to custom the navbar int mobile Devices*/
+@media (max-width: 376px){
+  .nav-item {
+    font-size: 4vw;
   }
 }
 
@@ -32,24 +40,31 @@ body {
 .intro_xbox {
   @extend %intro;
   background-color: lightgreen;
+  p { /*Nesting*/
+    font-size: 20px;
+  }
 }
 
 .intro_nintendo {
   @extend %intro, %nintendo_background;
-  p {
+  p { /*Nesting*/
     font-size: 20px;
   }
 }
 
 .intro_playstation {
   @extend %intro, %playstation_background;
+  p { /*Nesting*/
+    font-size: 20px;
+  }
 }
 
-.grid {
+.grid { /*Responsive grid, with felx and wrap*/
   display: flex;
   flex-wrap: wrap;
 }
 
+/*Adding custom Borders plus inheritance of each console variable*/
 .grid_xbox {
   @extend %grid_item, %xbox_background;
   border:4px solid green;
@@ -71,6 +86,7 @@ body {
   text-align: center;
 }
 
+/*Centralizing and styling the columns*/
 .col-lg-4{
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
