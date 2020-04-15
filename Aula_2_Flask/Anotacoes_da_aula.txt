@@ -1,0 +1,5 @@
+Comecando com Python:
+A extencao '.py' define arquivos que possuem a linguagem Python em seu corpo.
+Usando o comando 'touch' ja conhecido, podemos criar um arquivo 'ola_mundo.py' por exemplo para criar o primeiro porgrama em python:
+Corpo: 1. print ("Ola mundo"); Saida: Ola mundo.
+Com o comando: 'python nome_do_arquivo.py' executamos o arquivo em Python.
