@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>E ano novo?</title>
+    <style>
+      body {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    {% if ano_nov %} <!--Condicional converter do Jinja2. No caso, se for True, executa essa-->
+      <h1>Siim!, E Ano Novo</h1>
+
+    {% else %} <!--Caso for False, executa essa-->
+      <h1>NAO!</h1>
+
+    {% endif %}
+  </body>
+</html>

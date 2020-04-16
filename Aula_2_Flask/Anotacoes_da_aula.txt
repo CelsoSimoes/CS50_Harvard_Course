@@ -15,3 +15,7 @@ Comecando com Flask:
 Para executar um 'flask run' num arquivo expecifico (Que não seja o app.py) preciso dar o comando:
 'export FLASK_APP=nome_do_arquivo.py' e ira excutar o flask run nesse arquivo.
 Ao usar o 'render_template' na importacao do flask, o programa sempre sirá procurar os arquvios que estiverem diretamente no subdiretorio chamado 'templates' por isso sempre quando queisermos urilizar esta funcao precisamos criar esse subdiretorio
+Juntamente com o render_template, posso utilizar variaveis dentro do meu arquivo html em conjunto com o arquivo python para modificar o site dentro do codigo python
+A linguagem que trabalha com as variaveis e fazendo a juncao do arquivopython com o arquivo html é chamada 'JINJA2'
+Posso fazer operacoes com o Jinja2, como loops e condicionais if-else, a forma como faço isso esta nos arquivos de nomes indicados
+Template inheritance ou Herança por templates, é: Utilizar a mesma base para criar sites diferentes, como usar o mesmo template porem adicionando diferentesvariaveis em cada um, tornando a pagina diferente.

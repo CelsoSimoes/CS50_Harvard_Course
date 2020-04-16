@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Loops no Jinja2</title>
+  </head>
+  <body>
+    <h1>Nomes:</h1>
+
+    <ul>
+      {% for nome in nomes %} <!--Comando para executar o loop no jinja ate que nao tenha mais nome na varaivel 'nomes'-->
+        <li>{{ nome }}</li>
+      {% endfor %} <!--Fim do Loop-->
+    </ul>
+  </body>
+</html>
