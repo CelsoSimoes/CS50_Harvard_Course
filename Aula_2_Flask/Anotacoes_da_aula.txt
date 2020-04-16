@@ -9,3 +9,9 @@ Ponto sobre funções em Python: Podemos reutilizalos em arquivos diferentes min
 E interessante criar um arquivo python que contenha exclusivamente funcoes ao inves de codigo juntamente com as funcoes, pois ao importar certa funcao de um arquivo, ira rodar tudo que esta contido no arquivo com a Funcao
 Porem isso pode ser contornado utilizando-se um 'def main()' como se fosse uma Funcao principal do arquivo, e fazer com que essa funcao execute somente quando estamos rodando o arquivo Funcao
 Exemplos dessa funcao no arquivo 'funcoes'
+
+
+Comecando com Flask:
+Para executar um 'flask run' num arquivo expecifico (Que não seja o app.py) preciso dar o comando:
+'export FLASK_APP=nome_do_arquivo.py' e ira excutar o flask run nesse arquivo.
+Ao usar o 'render_template' na importacao do flask, o programa sempre sirá procurar os arquvios que estiverem diretamente no subdiretorio chamado 'templates' por isso sempre quando queisermos urilizar esta funcao precisamos criar esse subdiretorio
