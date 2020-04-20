@@ -1,0 +1,20 @@
+{% extends "layout.html" %} <!--Nosso arquivo de layout padronizado-->
+
+{% block heading %}
+  Notas
+{% endblock %}
+
+{% block body %}
+  <!--Para cada nota no 'notes' printe cada uma delas-->
+  <ul>
+    {% for note in notes %}
+      <li>{{ note }}</li>
+    {% endfor %}
+  </ul>
+
+  <form action = "{{ url_for ('notas')}}" method="post"> <!--Leva o formulario para a funcao index que se encontra no arquivo aplicacao_sessoes.py-->
+    <input type="text" name="note" placeholder="Coloque uma nota aqui">
+    <button>Adicionar nota</button>
+
+  </form>
+{% endblock %}
