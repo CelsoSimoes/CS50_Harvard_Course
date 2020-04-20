@@ -1,0 +1,14 @@
+{% extends "layout.html" %} <!--Nosso arquivo de layout padronizado-->
+
+{% block heading %}
+  Primeira Pagina
+{% endblock %}
+
+{% block body %}
+  <!--O 'ola' aqui no caso se refere ao nome da funcao contida no 'aplicacao_forms.py', e nao ao nome do arquivo 'ola.html' em si-->
+  <form action="{{ url_for('ola') }}" method="post"> <!--form que faz uso do metodo Post para enviar a informacao para outro arquivo utilizando o jinja2-->
+    <input type="text" name="name" placeholder="Digite seu Nome">
+    <button>Enviar</button>
+
+  </form>
+{% endblock %}

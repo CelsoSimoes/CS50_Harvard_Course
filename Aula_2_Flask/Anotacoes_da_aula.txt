@@ -19,3 +19,6 @@ Juntamente com o render_template, posso utilizar variaveis dentro do meu arquivo
 A linguagem que trabalha com as variaveis e fazendo a juncao do arquivopython com o arquivo html é chamada 'JINJA2'
 Posso fazer operacoes com o Jinja2, como loops e condicionais if-else, a forma como faço isso esta nos arquivos de nomes indicados
 Template inheritance ou Herança por templates, é: Utilizar a mesma base para criar sites diferentes, como usar o mesmo template porem adicionando diferentesvariaveis em cada um, tornando a pagina diferente.
+Por Default usamos sempre o 'GET request' nas nossas aplicacoes python, porem para a aplicacao de um 'form', iremos usar um 'Post request' para enviar informacao
+Sessões: a idéia por tras das sessões é que voce possa guardar informacoes nessa 'sua sessao', 'store data'.
+Para armmazenar essa informacoes podemos usar uma lista vazia, e a cada post request method adicionar o que foi enviado ao final da nossa lista pre pronta, acrescentando cada vez mais informacao
