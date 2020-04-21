@@ -1,0 +1,35 @@
+Começando com Bancos de Dados:
+Abordaremos bancos de dados relacionais, para guardar, manipular e usar efetivamente esses dados.
+
+Tipos de Dados:
+inteiros/Decimal: numeros
+Serial: como os inteiros, mas o serial conta automaticamente. Aumenta seu valor de forma automatica.
+Varchar: Armazena strings, letras etc.
+focaremos mais nesses 4 iniciais, porem existem outrso claro:
+TimeStamp, Boolean, Enum, etc...
+
+Podemos rrodar servidores Postgree tanto localmente na nossa maquina quanto em servidores online.
+No proximo projeto trabalharemos com um banco de dados Postgree online, chamado 'hiroki'
+Usaremos o comando 'psql' __url_do_servidor__ online para acessar nosso banco de dados no projeto 1
+
+Constraints/Restricoes:
+NOT NULL - A coluna precisa ter um valor
+UNIQUE - A coluna nao e compartilhada entre duas pessoas, os valores presentes nela sao unicos
+PRIMARY KEY - Define a chave primaria da tabela
+DEFAULT - Posso atribuir a coluna um valor pre-determinado. Se não adicionado nada nela diretamente, ela ja possuira um valor
+CHECK - Semelhante a um condicional: So quero adicionar valores que são maiores que 50 e menores que 100 por exemplo
+
+INSERT INTO - Comando para inserir dados numa tabela
+
+SELECT - É o comando utilizado para recuperar dados armazenado num banco de Dados
+SELECT * - Retorna tudo na tabela
+SELECT nome_da_coluna, outra_coluna - Seleciona as coluans como conhecemos
+(Varios destes conteudos ja sao conhecidos, pois ja fiz a materia de Banco de Dados na graduacao)
+FROM __nome__ - Tabela ao qual quero recuperara informacao
+WHERE __condicao__ - E especificada uma condicao simples do que quero recuperar
+Posso usar valores Booleanos (AND, OR, ...) e lógicos ('>', '<', '!=', ...) para trabalhar com minhar querys também, obtendo dados cada vez mais especificos e sofisticados/ filtrados
+SELECT AVG(__nome__) - Retorna a media da coluna __nome__
+SELECT AVG(x) as Tempo_medio - Retorna a media com a coluna tendo agora o nome Tempo_medio
+SELECT COUNT(x) - Conta a quantidade de linhas da coluna x, ou de todas as colunas ('*')
+SELECT MIN(x) - Seleciona o valor minimo de tal coluna
+SELECT MAX(x) - Seleciona o valor maximo de tal coluna
