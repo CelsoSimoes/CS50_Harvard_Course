@@ -33,3 +33,11 @@ SELECT AVG(x) as Tempo_medio - Retorna a media com a coluna tendo agora o nome T
 SELECT COUNT(x) - Conta a quantidade de linhas da coluna x, ou de todas as colunas ('*')
 SELECT MIN(x) - Seleciona o valor minimo de tal coluna
 SELECT MAX(x) - Seleciona o valor maximo de tal coluna
+SELECT ___...___ IN - Seleciona os dados que estejam dentro de outro range(funcoes, tabelas, outra selecao, etc...).
+
+UPDATE - Seleciona dados no banco, e os atualiza
+DELETE - Deleta dados
+
+LIMIT __Nº__ - Limita o numero de linhas que irao aparecer no resultado da consulta
+ORDER BY __nome__ - Ondena a coluna de acordo com o parametro passado, inteiros por exemplo
+ASC - Usado depois do order by, Apresenta a ordem Ascendente de exibicao
