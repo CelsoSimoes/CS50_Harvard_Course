@@ -40,4 +40,29 @@ DELETE - Deleta dados
 
 LIMIT __Nº__ - Limita o numero de linhas que irao aparecer no resultado da consulta
 ORDER BY __nome__ - Ondena a coluna de acordo com o parametro passado, inteiros por exemplo
-ASC - Usado depois do order by, Apresenta a ordem Ascendente de exibicao
+ASC/DESC - Usado depois do order by, Apresenta a ordem Ascendente/Descendente de exibicao
+GROUP BY - Une as linhas que um determinado valor que seja igual, ou seja, agrupa linhas com valores iguais
+HAVING - é semelhante ao WHERE  mas é exclusivo do GROUP BY, usado para condicionar o resultado retornado tambem
+
+Adminer.cs50.net - É o site que usaremos no projeto 1 para lidar com bancos de dados Postgree sql
+
+REFERENCES - Aparentemente é usado para referenciar a tabela no qual utilizaremos a variavel que se relaciona com ela, por exemplo: passengers.voos_id = voos.id, então temos que usar o References na craicao da variavel no passengers
+-- Att: serve para dar consistencia ao banco de dados, ao, por exemplo, impedir que a tabela de id seja deletada pois ela é referenciada em outra tabela, assim, para não virar uma bagunça, o sistema impede tal ação
+JOIN - Usado para unir duas tabelas que se relacionam de alguma forma
+
+Tipos de JOIN:
+INNER JOIN - Padrao, utilizando quando escrevemos so JOIN; realiza a recuperacao dos dados que tiveram um 'match' perfeito
+LEFT JOIN - Recupera todas as linhas da tabela a esquerda, mesmo que elas não tenham dado um 'match perfeito'
+RIGTH JOIN - Recupera todas as linhas da tabela a direita da funcao, mesmo que elas não tenham dado um 'match perfeito'
+
+Adicionar um INDEX a tabelas e bancos de dados pode tornar mais facil de se encontrar determinados dados/informacoes, porem existe um trade off nisso. Pois caso venhamos a ter de atualizar o banco, levara mais tempo, e também com o INDEX, mais espaço será ocupado
+Exemplos de 'Nesting' no arquivo 'selects.sql'
+
+
+Conceitos de seguranca:
+Existem formas de recuperar dados de usuarios usando a linguagem SQL de forma maliciosa, como por exemplo colocar senha como '1' OR '1' = '1', que é verdade e retornará acesso
+Por isso precisamos trabalhar com formas de proteger tais dados sensiveis desse possiveis atos. Isso é chamado SQL Injection
+Race Conditions - Duas pessoas acessando a mesma tabela, ao mesmo tempo, podem ser prejudicial a segurança do sistema, no caso de informacoes sensiveis;
+nesse aspecto entra o conceito de SQL Transctions, no qual, quando um usuario acessa uma tabela/linha/conta/ essa mesma, é então bloqueada no momento da transacao, ela tem um 'Lock'.
+E somente após o usuario 1 concluir o processo com a conta, o usuario 2 poderá ter acesso.
+SQL Alchemy - Biblioteca do Python, que conecta Python com SQL
