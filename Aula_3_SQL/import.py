@@ -17,3 +17,6 @@ def main():
                   {"origin": origin, "destination": destination, "duration": duration}) # Substitui os valores CSV para um SQL
       print(f"Added flight from {origin} to {destination} lasting {duration} minutes.") #Printando somente para saber o que esta acontecendo com o codigo
   db.commit() # "transactions are assumed, so close the transaction finished". Fecha a transacao feita, e comita as mudancas
+
+if __name__ == "__main__":
+    main()
