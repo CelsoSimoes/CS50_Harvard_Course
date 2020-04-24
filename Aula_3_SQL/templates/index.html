@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+{% block title %}Voos{% endblock %}
+
+{% block body %}
+    <h1>Agende um voo</h1>
+
+    <form action="{{ url_for('book') }}" method="post"> <!--Book é uma das nossas funcoes na aplicacao.py-->
+
+      <div class="form-group">
+          <select class="form-control" name="voo_id"> <!--Select é um menu dropdown no qual posso selecionar uma entre diversas opcoes que irao aparecer-->
+              {% for voo in voos %} <!--Faco um loop na varaivel voos que foi passado na chamada render template da aplicacao.py-->
+                  <option value="{{ voo.id }}">{{ voo.origin }} to {{ voo.destination }}</option> <!--Option é a sequencia de opcoes que aparecem dentro do menu dropdown select-->
+                  <!--A cada loop, o id do voo sera passado e diferenciar cada opcao-->
+              {% endfor %}
+          </select>
+      </div>
+
+      <div class="form-group">
+          <input class="form-control" name="name" placeholder="Nome do passageiro">
+      </div>
+
+      <div class="form-group">
+          <button class="btn btn-primary">Agende um voo</button>
+      </div>
+
+  </form>
+
+{% endblock %}

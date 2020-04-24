@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+{% block title %}Voos{% endblock %}
+
+{% block body %}
+    <h1>Detalhes do voo</h1>
+
+    <ul>
+      <li>Origem: {{ voo.origin }}</li>
+      <li>Destino: {{ voo.destination }}</li>
+      <li>Duracao: {{ voo.duration }} minutos</li>
+  </ul>
+
+  <h2>Passageiros</h2>
+  <ul>
+      {% for passenger in passengers %}
+          <li>{{ passenger.name }}</li>
+      {% else %}
+          <li>Sem passageiros.</li>
+      {% endfor %}
+  </ul>
+{% endblock %}

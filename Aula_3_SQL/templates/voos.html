@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block title %}Voos{% endblock %}
+
+{% block body %}
+    <h1>Todos os voos</h1>
+
+    <ul>
+      {% for voo in voos %}
+        <li>
+          <a href="{ {url_for('voo', voo_id=voo_id) }}"> <!--Preciso passar o id tambem pois ele sera adicionado a url da pag-->
+            {{ voo.origin }} to {{ voo.destination }}
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+{% endblock %}
