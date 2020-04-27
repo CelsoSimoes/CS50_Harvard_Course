@@ -1,0 +1,9 @@
+APIs - Application Progrmming Interfaces
+O projeto 1 irá se tratar de dar nota as Reviews de livros, e ler outras reviews na internet, algo assim
+Usaremos muito os APIs, no que se aplica a deixar que outras pessoas mecham no nosso código, e nós possamos trabalhar no delas tbm. Podendo APIs prontas serem obtidas facilmente, e aplicadas também.
+
+Começando a aula:
+Recapitulando os comandos e possibilidades ao trabalhar com SQL: Insert, Create, retornos de consultas, Acesso a banco de dados...
+Programação Orientada a Objetos: Pensar nas 'coisa/entidades' do nosso codigo como se fossem Objetos.
+
+O conceito de classe em python é semelhante ao de C++, (Como é apresentado no arquivo classes_0.py)
